@@ -17,4 +17,3 @@ git fetch origin $GIT_CLONE_BRANCH
 
 # Reset to revision
 git reset --hard $GIT_CLONE_REV
-
