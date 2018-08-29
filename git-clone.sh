@@ -15,3 +15,5 @@ git fetch origin ${GIT_CLONE_BRANCH}
 # Reset to revision
 git reset --hard ${GIT_CLONE_REV}
 
+chown -R 1000:1000 ${GIT_CLONE_DEST}
+
