@@ -7,5 +7,8 @@ GIT_CLONE_REV=${GIT_CLONE_REV:-}
 TMP_DIR=$(mktemp -d)
 
 git clone --depth=1 -b $GIT_CLONE_BRANCH $GIT_CLONE_REPO $TMP_DIR
+
 mkdir -p $GIT_CLONE_DEST
-mv $TMP_DIR $GIT_CLONE_DEST
+rm -rf $GIT_CLONE_DEST/*
+
+mv $TMP_DIR/* $GIT_CLONE_DEST
