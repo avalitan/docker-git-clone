@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine:3.9
 
 COPY git-clone.sh /
 RUN apk add --update git openssh
